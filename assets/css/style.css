@@ -1,0 +1,40 @@
+.navbar{
+    background-color: aquamarine;
+}
+.nav-item{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.nav-link{
+    font-weight: bold;
+}
+.social-icon{
+    float: right;
+}
+.header-brand-img {
+    height: 3rem;
+    line-height: 2rem;
+    vertical-align: middle;
+    width: auto;
+}
+.header-social-list {
+    line-height: 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.header-social-list li {
+    display: inline-block;
+}
+.header-social-list a {
+    font-size: 1rem;
+    text-decoration: none;
+}
+.social-icon{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.card-img-top{
+    height: 250px;
+    max-width: 220px;
+}
