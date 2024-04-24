@@ -35,3 +35,31 @@
     height: 250px;
     max-width: 220px;
 }
+.about-section {
+    padding: 60px 0;
+    text-align: center;
+}
+.about-heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.about-content {
+    font-size: 18px;
+    line-height: 1.8;
+}
+.contact-section {
+    padding: 60px 0;
+    /*text-align: center;*/
+}
+.contact-heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.contact-info {
+    font-size: 18px;
+    line-height: 1.8;
+}
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
