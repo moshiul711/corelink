@@ -1,266 +1,857 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CoreLink</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg border-bottom border-primary">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="assets/images/logo/logo.png" alt="Logo"
-                 class="header-brand-img d-inline-block align-text-top">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                       aria-expanded="false">Products</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="splicer.html">Fushion Splicer</a></li>
-                        <li><a class="dropdown-item" href="olts.html">Optical Line Terminal</a></li>
-                        <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
-                    </ul>
-                </li>
-                <!--<li class="nav-item dropdown">-->
+    <nav class="navbar sticky-top navbar-expand-lg shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo/logo.png" alt="Logo"
+                    class="header-brand-img d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link btn rounded-3 shadow" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn rounded-3 shadow" data-bs-toggle="dropdown"
+                            href="index.html" aria-expanded="true">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="splicer.html">Fushion Splicer</a></li>
+                            <li><a class="dropdown-item" href="olts.html">Optical Line Terminal</a></li>
+                            <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <!--<li class="nav-item dropdown">-->
                     <!--<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"-->
-                       <!--aria-expanded="false">Support</a>-->
+                    <!--aria-expanded="false">Support</a>-->
                     <!--<ul class="dropdown-menu">-->
-                        <!--<li><a class="dropdown-item" href="#">Download</a></li>-->
-                        <!--<li><a class="dropdown-item" href="#">Verify Product</a></li>-->
+                    <!--<li><a class="dropdown-item" href="#">Download</a></li>-->
+                    <!--<li><a class="dropdown-item" href="#">Verify Product</a></li>-->
                     <!--</ul>-->
-                <!--</li>-->
-                <li class="nav-item">
-                    <a class="nav-link" href="blogs.html">Blogs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="service.html">Support & Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <div class="d-flex" role="search">
-                <ul class="header-social-list" style="text-align: center">
-                    <li>
-                        <a href="javascript:void(0);" class="social-icon">
-                            <img src="assets/images/icons/icons8-facebook-32.png" alt="">
-                        </a>
+                    <!--</li>-->
+                    <li class="nav-item">
+                        <a class="nav-link btn rounded-3 shadow" href="blogs.html">Blogs</a>
                     </li>
-                    <li>
-                        <a href="javascript:void(0);" class="social-icon">
-                            <img src="assets/images/icons/icons8-youtube-32.png" alt="">
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link btn rounded-3 shadow" href="service.html">Support & Services</a>
                     </li>
-                    <li>
-                        <a href="javascript:void(0);" class="social-icon">
-                            <img src="assets/images/icons/icons8-linkedin-32.png" alt="">
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link btn rounded-3 shadow" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn rounded-3 shadow" href="contact.html">Contact</a>
                     </li>
                 </ul>
+                <div class="d-flex" role="search">
+                    <ul class="header-social-list" style="text-align: center">
+                        <li>
+                            <a href="javascript:void(0);" class="social-icon">
+                                <img src="assets/images/icons/icons8-facebook-32.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="social-icon">
+                                <img src="assets/images/icons/icons8-youtube-32.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="social-icon">
+                                <img src="assets/images/icons/icons8-linkedin-32.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<section id="slider" class="slider-top">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/images/slider/eb08acef.png" class="d-block w-100" alt="...">
+    <section id="slider" class="slider-top">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
             </div>
-            <!-- <div class="carousel-item">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/slider/eb08acef.png" class="d-block w-100" alt="...">
+                </div>
+                <!-- <div class="carousel-item">
                 <img src="assets/images/slider/e4d06771.webp" class="d-block w-100" alt="...">
             </div> -->
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</section>
-
-<main class="container">
-    <section id="about-us" class="my-5">
-        <h2 class="text-center mb-2">
-            About Us
-        </h2>
-        <div class="border border-2 border-primary mb-2"></div>
-        <p class="fw-bold text-center">
-            Welcome to CoreLink: Your Gateway to Seamless Connectivity
-        </p>
-        <p>
-            Founded in 2016, CoreLink has swiftly emerged as a reputable leader in the networking industry. With a passion for technological innovation and a commitment to customer satisfaction, we specialize in providing cutting-edge networking products and solutions tailored to meet the diverse needs of businesses worldwide
-        </p>
-        <p>
-            At CoreLink, we are dedicated to forging strong connections that drive innovation and propel businesses forward. As a premier provider of networking products, we are committed to delivering cutting-edge solutions that empower organizations to thrive in today's digital landscape.
-        </p>
-
-    </section>
-
-    <section id="featured-products" class="my-5">
-        <h2 class="text-center mb-2">
-            Our Core Products
-        </h2>
-        <div class="  mb-2"></div>
-        <p class="text-center">
-            Our products are engineered with performance, scalability, and security in mind, ensuring that your network infrastructure can handle the demands of today's dynamic business environment.
-        </p>
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                <div class="card   rounded-3 shadow">
-                    <div class="text-center">
-                        <img src="assets/images/products/w80.png" class="card-img-top w-100" alt="...">
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Corelink W-80 Splicer</h5>
-                        <!--<p class="card-text">Endface melter Fusion Splicer</p>-->
-                        <a href="w80.html" class="btn btn-primary w-100">Read More</a>
-                    </div>
-                </div>
             </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                <div class="card rounded-3 shadow">
-                    <div class="text-center">
-                        <img src="assets/images/products/w70.png" class="w-70 card-img-top w-100" alt="...">
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Corelink W-70 Splicer</h5>
-                        <!--<p class="card-text">Strong Performance Mini splicer</p>-->
-                        <a href="w70.html" class="btn btn-primary w-100">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                <div class="card rounded-3 shadow">
-                    <div class="text-center">
-                        <img src="assets/images/products/olt.png" class="card-img-top w-100 pt-2" alt="...">
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Optical Line Terminal</h5>
-                        <!--<p class="card-text">Dual Power Optical Line Terminal</p>-->
-                        <a href="olts.html" class="btn btn-primary w-100">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                <div class="card   rounded-3 shadow">
-                    <div class="text-center">
-                        <img src="assets/images/products/power.png" class="card-img-top w-100 pt-2" alt="...">
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title">CoreLink Power Meter</h5>
-                        <!--<p class="card-text">Dual Power Optical Line Terminal</p>-->
-                        <a href="meter.html" class="btn btn-primary w-100">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                <div class="card   rounded-3 shadow">
-                    <div class="text-center">
-                        <img src="assets/images/products/otdr.png" class="card-img-top w-100 pt-2" alt="...">
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title">CoreLink OTDR</h5>
-                        <!--<p class="card-text">Endface melter Fusion Splicer</p>-->
-                        <a href="otdr.html" class="btn btn-primary w-100">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                <div class="card   rounded-3 shadow">
-                    <div class="text-center">
-                        <img src="assets/images/products/sfp.png" class="w-70 card-img-top w-100 pt-2" alt="...">
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Corelink SFP Pon Module</h5>
-                        <!--<p class="card-text">Strong Performance Mini splicer</p>-->
-                        <a href="sfp.html" class="btn btn-primary w-100">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                <div class="card   rounded-3 shadow">
-                    <div class="text-center">
-                        <img src="assets/images/products/patch.png" class="card-img-top w-100 pt-2" alt="...">
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title">CoreLink Patchcord</h5>
-                        <!--<p class="card-text">Dual Power Optical Line Terminal</p>-->
-                        <a href="patchcord.html" class="btn btn-primary w-100">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                <div class="card  rounded-3 shadow">
-                    <div class="text-center">
-                        <img src="assets/images/products/router.png" class="card-img-top w-100 pt-2" alt="...">
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title">CoreLink ONU Router</h5>
-                        <!--<p class="card-text">Dual Power Optical Line Terminal</p>-->
-                        <a href="router.html" class="btn btn-primary w-100">Read More</a>
-                    </div>
-                </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
-    <section id="contact-us" class="mb-5">
-        <h2 class="text-center mb-2">
-            Contact Us
-        </h2>
-        <div class="border border-2 border-primary mb-2"></div>
-        <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your Name Here">
+    <main class="container">
+        <section id="about-us" class="mb-5">
+            <div class="section_title text-center" data-wow-delay="0.2s">
+                <br><br>
+                <h2 class="con_title">About Us</h2>
+                <div class="line_bottom"></div>
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Your Email Here">
+            <p class="fw-bold text-center">
+                Welcome to CoreLink: Your Gateway to Seamless Connectivity
+            </p>
+            <div style="text-align: justify;">
+                <p>
+                    Founded in 2016, CoreLink has swiftly emerged as a reputable leader in the networking industry. With
+                    a
+                    passion for technological innovation and a commitment to customer satisfaction, we specialize in
+                    providing cutting-edge networking products and solutions tailored to meet the diverse needs of
+                    businesses worldwide
+                </p>
+                <p>Corelink is a manufacturing company focusing on
+                    communication services. Based on the connection of
+                    signal receiving terminals and information data through
+                    GPON or EPON access network technology, Bonelinks
+                    provides turnkey solutions including optical cable
+                    structure design and development, application deployment
+                    and system integration. Our business covers a wide range
+                    of areas, including data centers, FTTR, FTTH, FTTB, OPS,
+                    ISP, power transmission, submarine transmission, and
+                    duct transmission.</p>
+                <p>
+                    At CoreLink, we are dedicated to forging strong connections that drive innovation and propel
+                    businesses
+                    forward. As a premier provider of networking products, we are committed to delivering cutting-edge
+                    solutions that empower organizations to thrive in today's digital landscape.
+                </p>
+
             </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3" placeholder="Your Message Here"></textarea>
+
+        </section>
+    </main>
+
+    <section id="products">
+        <div class="container">
+            <div class="section_title text-center" data-wow-delay="0.2s">
+
+                <h2 class="con_title">To Support your Network Businness, All Reliable Networking Products</h2>
+                <div class="line_bottom"></div>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Submit</button>
-        </form>
+            <p class="text-center">
+                Corelink networks is a professional fiber optic products supplier
+                offering a wide range of reliable solutions for fiber
+                connectivity, WDM, PLC splitter, and high-density
+                datacom cabling. We keep an enormous back stock of
+                optical transceivers and offer flexible custom
+                solutions. With our years of experience in the industry,
+                we have established ourselves as trusted fiber optics
+                companies for all your needs.
+            </p>
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <div class="section_title" data-wow-delay="0.2s">
+                        <h4 class="text-center con_title ">Optical Line Terminal (OLT)</h4>
+                        <div class="ps-3" style="text-align: justify;">
+                            <p>
+                                <b>Backbone of Passive Optical Networks:</b> The Optical Line Terminal (OLT) serves as the central component in a Passive Optical Network (PON), which is a fiber-to-the-home (FTTH) or fiber-to-the-premises (FTTP) architecture widely used for delivering high-speed broadband services to end-users. As the interface between the service provider's network and the subscriber's premises, the OLT plays a crucial role in managing and distributing optical signals within the PON infrastructure.
+                            </p>
+                            <p>
+                                <b>Centralized Control:</b> The OLT provides centralized control and management functions for the PON, overseeing the allocation of upstream and downstream bandwidth, traffic prioritization, quality of service (QoS) enforcement, and network monitoring. This centralized control ensures optimal performance, reliability, and security of the network while facilitating efficient service provisioning and troubleshooting.
+                            </p>
+                            <p>
+                                <b>Network Resilience and Redundancy:</b> High availability and reliability are critical requirements for PON networks, and the OLT plays a key role in ensuring network resilience and redundancy. Many OLTs feature built-in redundancy mechanisms, such as dual power supplies, hot-swappable modules, and automatic failover capabilities, to minimize service disruptions and maximize network uptime.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card rounded-3 shadow">
+                        <div class="text-center image-container py-2">
+                            <img src="assets/images/products/ftth-epon-olt-4-8-ports-optical-line-terminal59564451806.png" class="img-fluid card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                                Our company provides Compact fiber power meters with outsized capabilities have revolutionized
+                                the fiber testing landscape. The MP-60/-80 Miniature USB 2.0 Power Meters exemplify this
+                                trend by putting power and loss testing into the palm of your hand
+                            </p>
+                            <a href="olts.html" class="btn btn-primary rounded-5 shadow">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row my-5">
+                <div class="col-12 col-md-6">
+                    <div class="card rounded-3 shadow">
+                        <div class="text-center image-container py-2">
+                            <img src="assets/images/products/2_8004adf7-344d-4294-aa57-7b6e2b796d76.png"
+                                class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                                Explore versatile optic splitters, including PLC and FBT
+                                options. Support for 1xN, 2xN, and MxN configuration,
+                                packaged in ABS cassettes, steel tube or racks.
+                            </p>
+                            <a href="" class="btn btn-primary rounded-5 shadow">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section_title" data-wow-delay="0.2s">
+                        <h4 class="con_title text-center">HDMI Live Tv Encoder</h4>
+                        <div class="ps-3" style="text-align: justify;">
+                            <p>
+                                <b>Capture and Encoding:</b> HDMI live TV encoders capture video and audio signals from HDMI sources, such as cameras, computers, set-top boxes, and gaming consoles, and encode them into digital formats suitable for streaming over IP networks. This encoding process typically utilizes advanced compression algorithms, such as H.264 or H.265/HEVC, to optimize bandwidth usage while preserving video quality.
+                            </p>
+                            <p>
+                                <b>High-Quality Video and Audio:</b>HDMI live TV encoders ensure the transmission of high-quality video and audio content, with support for resolutions up to 4K Ultra HD (UHD) and beyond, as well as immersive audio formats such as Dolby Digital and AAC. This allows broadcasters to deliver a superior viewing experience to their audiences, with crisp visuals and immersive sound.
+                            </p>
+                            <p>
+                                <b>Real-Time Streaming:</b> With support for real-time encoding and streaming, HDMI live TV encoders enable broadcasters to deliver live content to viewers instantaneously, without significant delays. This capability is essential for applications where timeliness and interactivity are critical, such as live sports events, news broadcasts, and interactive webinars.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <div class="section_title" data-wow-delay="0.2s">
+                        <h4 class="text-center con_title ">Optical Power Meter</h4>
+                        <div class="ps-3" style="text-align: justify;">
+                            <p>
+                                <b>Measurement Accuracy:</b> Optical power meters are designed to deliver highly accurate measurements of optical power levels, typically expressed in decibels (dB) or milliwatts (mW). This level of precision enables technicians to evaluate signal quality with confidence, ensuring that optical signals meet specified performance standards and regulatory requirements.
+                            </p>
+                            <p>
+                                <b>Optical Loss Testing:</b> In fiber optic installations and maintenance activities, optical power meters are indispensable for conducting optical loss tests. These tests involve measuring the power difference between transmitted and received signals to assess signal attenuation caused by factors such as fiber length, splices, connectors, and bends.
+                            </p>
+                            <p>
+                                <b>Integration with Test Systems:</b> Optical power meters can be seamlessly integrated into comprehensive fiber optic test systems alongside other instruments such as light sources, optical spectrum analyzers, and optical time-domain reflectometers (OTDRs). This integration streamlines testing workflows, enables automated procedures, and facilitates in-depth analysis of network performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card rounded-3 shadow">
+                        <div class="text-center image-container py-2">
+                            <img src="assets/images/products/power.png" class="img-fluid card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                                Our company provides Compact fiber power meters with outsized capabilities have revolutionized
+                                the fiber testing landscape. The MP-60/-80 Miniature USB 2.0 Power Meters exemplify this
+                                trend by putting power and loss testing into the palm of your hand
+                            </p>
+                            <a href="meter.html" class="btn btn-primary rounded-5 shadow">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Fiber Optic Splitter -->
+            <div class="row my-5">
+                <div class="col-12 col-md-6">
+                    <div class="card rounded-3 shadow">
+                        <div class="text-center image-container py-2">
+                            <img src="assets/images/products/1x4-apc-1x4-Mini-blockless-PLC-Splitter-4-500x500.jpeg"
+                                class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                                Explore versatile optic splitters, including PLC and FBT
+                                options. Support for 1xN, 2xN, and MxN configuration,
+                                packaged in ABS cassettes, steel tube or racks.
+                            </p>
+                            <a href="" class="btn btn-primary rounded-5 shadow">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section_title" data-wow-delay="0.2s">
+                        <h4 class="con_title text-center">Optical Cable Splitter</h4>
+                        <div class="ps-3" style="text-align: justify;">
+                            <p>
+                                Optical cable splitters are ingenious devices designed to optimize your audio setup,
+                                providing a seamless solution for sharing audio signals between multiple devices.
+                                Whether
+                                you're a home theater enthusiast, a gaming aficionado, or an audio professional, these
+                                splitters offer unparalleled convenience and versatility.
+                            </p>
+                            <p>
+                                Optical cable splitters come in various configurations to suit your specific needs. From
+                                simple 1-in-2-out splitters to more complex setups accommodating multiple devices, you
+                                can
+                                customize your audio setup to fit your unique requirements.
+                            </p>
+                            <p>
+                                Fiber optic splitters facilitate the distribution of optical signals from a single input
+                                fiber to multiple output fibers, allowing for simultaneous transmission to multiple
+                                destinations. This enables efficient sharing of bandwidth and resources, optimizing
+                                network performance and throughput.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Fiber Optic Patchcord -->
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <div class="section_title" data-wow-delay="0.2s">
+                        <h4 class="text-center con_title ">Optical Cable Patchcord</h4>
+                        <div class="ps-3" style="text-align: justify;">
+                            <p>
+                                Optical cable splitters are ingenious devices designed to optimize your audio setup,
+                                providing a seamless solution for sharing audio signals between multiple devices.
+                                Whether
+                                you're a home theater enthusiast, a gaming aficionado, or an audio professional, these
+                                splitters offer unparalleled convenience and versatility.
+                            </p>
+                            <p>
+                                Optical cable splitters come in various configurations to suit your specific needs. From
+                                simple 1-in-2-out splitters to more complex setups accommodating multiple devices, you
+                                can
+                                customize your audio setup to fit your unique requirements.
+                            </p>
+                            <p>
+                                Fiber optic splitters facilitate the distribution of optical signals from a single input
+                                fiber to multiple output fibers, allowing for simultaneous transmission to multiple
+                                destinations. This enables efficient sharing of bandwidth and resources, optimizing
+                                network performance and throughput.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card rounded-3 shadow h-100">
+                        <div class="text-center image-container py-2">
+                            <img src="assets/images/products/patchcord.jpg" class="img-fluid card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body text-center">
+                            <p class="card-text text-wrap">
+                                Our company delivers factory-tested fiber cable patch
+                                cord solutions, including multi-fiber variants in OS2,
+                                OM3 and OM4. Tailored lengths suit diverse fiber optic
+                                network needs. We offer LC, SC, ST, FC, MTP, and MPO
+                                patch cable options with PC, UPC or APC polishing.
+                            </p>
+                            <a href="patchcord.html" class="btn btn-primary rounded-5 shadow">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row my-5">
+                <div class="col-12 col-md-6">
+                    <div class="card rounded-3 shadow">
+                        <div class="text-center image-container py-2">
+                            <img src="assets/images/products/SFP-10G-SR-500x500.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                                Optical transceivers can both transmit and receive data
+                                with high speed and security. Our company offers a
+                                diverse range, with speed ranges from 1G, 10G, 25G, 40G,
+                                50G, 100G, 200G, 400G, and beyond, adaptable to various
+                                fiber optic network architectures via rigorous testing.
+                            </p>
+                            <a href="sfp.html" class="btn btn-primary rounded-5 shadow">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section_title" data-wow-delay="0.2s">
+                        <h4 class="con_title text-center">Optical Transceivers</h4>
+                        <div class="ps-3" style="text-align: justify;">
+                            <p>
+                                <b>Bidirectional Communication:</b> Optical transceivers enable bidirectional
+                                communication by converting electrical signals from network devices, such as routers,
+                                switches, and servers, into optical signals for transmission over fiber optic cables.
+                                They also receive incoming optical signals and convert them back into electrical signals
+                                for processing by network equipment.
+                            </p>
+                            <p>
+                                <b>Optical to Electrical Conversion:</b> In transmitting data over fiber optic cables,
+                                optical transceivers perform the crucial function of converting digital data into
+                                modulated optical signals. This process involves encoding the electrical signals onto
+                                laser diodes or light-emitting diodes (LEDs), which emit light pulses representing the
+                                data.
+                            </p>
+                            <p>
+                                <b>Form Factors and Interfaces:</b> Optical transceivers are available in various form
+                                factors and interface types to accommodate different network architectures and equipment
+                                designs. Common form factors include Small Form-factor Pluggable (SFP), QSFP (Quad Small
+                                Form-factor Pluggable), and CFP (C Form-factor Pluggable), each offering unique
+                                advantages in terms of size, power consumption, and port density.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-</main>
 
-<footer class="bg-dark text-white text-center py-3">
-    <p>&copy; CoreLink Technology Ltd. 2016-2024 All rights reserved.</p>
-</footer>
+    <section id="featured-products" class="mt-5">
+        <div class="container">
+            <div class="section_title text-center" data-wow-delay="0.2s">
+                <br>
+                <h2 class="con_title">Our Core Products</h2>
+                <div class="line_bottom"></div>
+            </div>
+            <p class="text-center">
+                Our products are engineered with performance, scalability, and security in mind, ensuring that your
+                network infrastructure can handle the demands of today's dynamic business environment.
+            </p>
+            <div class="row pb-5 my-slider">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="card h-100">
+                        <div class="text-center p-3">
+                            <img src="assets/images/products/w80.png" class="card-img-top w-100" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Corelink W-80 Splicer</h5>
+                            <!--<p class="card-text">Endface melter Fusion Splicer</p>-->
+                            <a href="w80.html" class="btn btn-primary w-100">Read More</a>
+                        </div>
+                    </div>
+                </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="card h-100">
+                        <div class="text-center p-3">
+                            <img src="assets/images/products/w70.png" class="w-70 card-img-top w-100" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Corelink W-70 Splicer</h5>
+                            <!--<p class="card-text">Strong Performance Mini splicer</p>-->
+                            <a href="w70.html" class="btn btn-primary w-100">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="card h-100">
+                        <div class="text-center p-3">
+                            <img src="assets/images/products/olt.png" class="card-img-top w-100 pt-2" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Optical Line Terminal</h5>
+                            <!--<p class="card-text">Dual Power Optical Line Terminal</p>-->
+                            <a href="olts.html" class="btn btn-primary w-100">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="card h-100">
+                        <div class="text-center p-3">
+                            <img src="assets/images/products/power.png" class="card-img-top w-100 pt-2" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">CoreLink Power Meter</h5>
+                            <!--<p class="card-text">Dual Power Optical Line Terminal</p>-->
+                            <a href="meter.html" class="btn btn-primary w-100">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="card h-100">
+                        <div class="text-center p-3">
+                            <img src="assets/images/products/otdr.png" class="card-img-top w-100 pt-2" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">CoreLink OTDR</h5>
+                            <!--<p class="card-text">Endface melter Fusion Splicer</p>-->
+                            <a href="otdr.html" class="btn btn-primary w-100">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="card h-100">
+                        <div class="text-center p-3">
+                            <img src="assets/images/products/sfp.png" class="w-70 card-img-top w-100 pt-2" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">SFP Pon Module</h5>
+                            <!--<p class="card-text">Strong Performance Mini splicer</p>-->
+                            <a href="sfp.html" class="btn btn-primary w-100">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="card h-100">
+                        <div class="text-center p-3">
+                            <img src="assets/images/products/patch.png" class="card-img-top w-100 pt-2" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">CoreLink Patchcord</h5>
+                            <!--<p class="card-text">Dual Power Optical Line Terminal</p>-->
+                            <a href="patchcord.html" class="btn btn-primary w-100">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="card h-100">
+                        <div class="text-center p-3">
+                            <img src="assets/images/products/router.png" class="card-img-top w-100 pt-2" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">CoreLink ONU Router</h5>
+                            <!--<p class="card-text">Dual Power Optical Line Terminal</p>-->
+                            <a href="router.html" class="btn btn-primary w-100">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why_choose" class="mb-2">
+        <div class="container">
+            <div class="section_title text-center" data-wow-delay="0.2s">
+                <br>
+                <h2 class="con_title"> Why Choose Us For Your Fiber Optic Business</h2>
+                <div class="line_bottom"></div>
+                <p class="fw-bold text-center">
+                    Welcome to CoreLink: Your Gateway to Seamless Connectivity
+                </p>
+
+                <p class="py-2">
+                    As a trustworthy fiber optic products supplier in China, we aim to provide high performance signal
+                    transmission solutions. Our company is dedicated to providing cutting-edge fiber optical products
+                    and fiber network solutions. Get in touch with us!
+                </p>
+            </div>
+
+            <div class="row pb-5">
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card rounded-3 shadow h-100">
+                        <div class="text-center py-2">
+                            <img src="assets/images/icons/icons8-award-100.png" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Rich Industry Experience</h5>
+                            <p class="card-text">More than 11 years fiber optic cable production extending to fiber
+                                optic splitter and fiber patch cord to meet flexible requirements at cabling systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card rounded-3 shadow h-100">
+                        <div class="text-center py-2">
+                            <img src="assets/images/icons/icons8-headphone-100.png" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Competitive Price</h5>
+                            <p class="card-text">Buy in bulk can get a better
+                                price. Save shipping and
+                                purchasing costs for you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card rounded-3 shadow h-100">
+                        <div class="text-center py-2">
+                            <img src="assets/images/icons/icons8-delivery-100.png" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fast Delivery Time</h5>
+                            <p class="card-text">Fiber Optic Products in stock
+                                will be shipped within 3 days.
+                                We cooperate with veteran
+                                logistics companies to shorten
+                                the lead time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card rounded-3 shadow h-100">
+                        <div class="text-center py-2">
+                            <img src="assets/images/icons/icons8-team-goal-100.png" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dedicated Teams</h5>
+                            <p class="card-text">We have a professional QA &
+                                Engineering team, qualified
+                                operators to offer all-round
+                                fiber optic support.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card rounded-3 shadow h-100">
+                        <div class="text-center py-2">
+                            <img src="assets/images/icons/icons8-technical-support-100.png" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Technical Support</h5>
+                            <p class="card-text">Our experts assist in
+                                understanding fiber optic cable,
+                                splitter, and patch cord
+                                details, plus offer usage advice
+                                and maintenance tips.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card rounded-3 shadow h-100">
+                        <div class="text-center py-2">
+                            <img src="assets/images/icons/icons8-contact-100.png" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Easy Contact</h5>
+                            <p class="card-text">Our sales and technical team
+                                have been in fiber optic cabling
+                                systems years. You may reach
+                                them easily and get satisfied
+                                replies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="support" class="mb-2 bg-grey">
+        <div class="container">
+            <div class="section_title text-center" data-wow-delay="0.2s">
+                <br>
+                <h2 class="con_title"> After-Sales Support for Your Fiber Optic Solutions</h2>
+                <div class="line_bottom"></div>
+                <p class="fw-bold text-center">
+                    Reliability Beyond Purchase
+                </p>
+
+                <p class="py-2">
+                    Count on our dedicated after-sales support to ensure your
+                    fiber optic solutions consistently deliver exceptional
+                    performance.
+                </p>
+            </div>
+
+            <div class="row pb-5">
+                <div class="col-12 p-2">
+                    <ol class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">
+                                    <i class="fa-solid fa-circle-check"></i> Rapid Response Time
+                                </div>
+                                <p class="ps-4">Count on us to address your fiber optic needs promptly, with a
+                                    guaranteed turnaround of 24 hours.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-12 p-2">
+                    <ol class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">
+                                    <i class="fa-solid fa-circle-check"></i> Dedicated After-Sales Care
+                                </div>
+                                <p class="ps-4">
+                                    Our
+                                    dedicated after-sales services are geared
+                                    towards resolving every concern you might have
+                                    within the realm of fiber optic products.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-12 p-2">
+                    <ol class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">
+                                    <i class="fa-solid fa-circle-check"></i> Meeting
+                                    Your Fiber Optic Demands
+                                </div>
+                                <p class="ps-4">Be
+                                    confident that your specific needs concerning
+                                    materials, compatibility, and packaging of fiber
+                                    optic products will be met satisfactorily.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-12 p-2">
+                    <ol class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">
+                                    <i class="fa-solid fa-circle-check"></i> Expert
+                                    Fiber Optics Technical Guidance
+                                </div>
+                                <p class="ps-4">Our
+                                    proficient technical support team is ready to
+                                    offer you practical solutions and free guidance,
+                                    ensuring seamless experiences with fiber optic
+                                    solutions.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="supply_service" class="mb-2">
+        <div class="container">
+            <div class="section_title text-center" data-wow-delay="0.2s">
+                <br>
+                <h2 class="con_title"> Striving for Excellence in Fiber Optic
+                    Products Supply and Service</h2>
+                <div class="line_bottom"></div>
+                <p class="fw-bold text-center">
+                    Superior fiber optic suppliers for
+                    Diverse Customers
+                </p>
+
+                <p class="py-2">
+                    Choose Corelink as your trusted fiber
+                    optic products supplier. With our
+                    high-quality fiber optic products,
+                    competitive prices, and exceptional
+                    service, we are the ideal partner for
+                    wholesalers, e-commerce seller, and
+                    ISPs.
+                </p>
+            </div>
+
+            <div class="row pb-5">
+                <div class="col-12 p-2 mb-4">
+                    <h5 class="card-title pb-3">
+                        <span class="border-top border-info-subtle border-5">Catering to Wholesale / fiber
+                            distributors Customers</span>
+                    </h5>
+                    <p class="card-text">Our high-quality fiber optic products are
+                        available at competitive prices, making
+                        us a reliable China supplier for
+                        larger-scale purchases.
+                    </p>
+                </div>
+                <div class="col-12 p-2 mb-4">
+                    <h5 class="card-title pb-3">
+                        <span class="border-top border-info-subtle border-5">For e-commerce seller</span>
+                    </h5>
+                    <p class="card-text">We support you with flexible minimum
+                        order quantities and fast delivery. Our
+                        top-notch fiber optic products and
+                        attractive pricing are designed for your
+                        online store success.
+                    </p>
+                </div>
+                <div class="col-12 p-2 mb-4">
+                    <h5 class="card-title pb-3">
+                        <span class="border-top border-info-subtle border-5">For Contractor, ISPs or Operators</span>
+                    </h5>
+                    <p class="card-text">Simplify your procurement with our
+                        turnkey solution. We offer customized
+                        fiber optic products and expert support
+                        for successful project implementation.
+                        Trust our exceptional quality and
+                        streamline your production process.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us" class="bg-grey">
+        <div class="section_title text-center" data-wow-delay="0.2s">
+            <br>
+            <h2 class="con_title"> A
+                Supplier Provides Products, <br>But We Care About Your
+                Business.</h2>
+            <div class="line_bottom"></div>
+            <p class="fw-bold text-center">
+                If you do not find a fiber optic product that can meet
+                your requirements, please contact us as we might have a
+                solution available.
+            </p>
+            <div class="pb-5">
+                <a href="" class="btn btn-outline-primary btn-lg fw-bold fs-6 rounded-5 shadow">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white footer">
+        <p>&copy; CoreLink Networks. 2016-2024 All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+    <script>
+        var slider = tns({
+            container: '.my-slider',
+            autoplay: 1,
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            gutter: 15,
+            nav: false,
+            controls: false,
+            speed: 300,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: 1,
+
+            responsive: {
+                640: {
+                    edgePadding: 20,
+                    gutter: 20,
+                    items: 2
+                },
+                700: {
+                    gutter: 30
+                },
+                900: {
+                    items: 4
+                }
+            }
+        });
+    </script>
 </body>
+
 </html>
