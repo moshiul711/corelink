@@ -9,6 +9,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/slider-pro.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/examples.css" media="screen"/>
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -35,6 +39,9 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="splicer.html">Fushion Splicer</a></li>
                             <li><a class="dropdown-item" href="olts.html">Optical Line Terminal</a></li>
+                            <li><a class="dropdown-item" href="otdr.html">OTDR</a></li>
+                            <li><a class="dropdown-item" href="meter.html">Power Meter</a></li>
+                            <li><a class="dropdown-item" href="sfp.html">Pon Module</a></li>
                             <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
                         </ul>
                     </li>
@@ -47,7 +54,7 @@
                     <!--</ul>-->
                     <!--</li>-->
                     <li class="nav-item">
-                        <a class="nav-link btn rounded-3 shadow" href="blogs.html">Blogs</a>
+                        <a class="nav-link btn rounded-3 shadow" href="blogs.html">Download</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn rounded-3 shadow" href="service.html">Support & Services</a>
@@ -62,7 +69,7 @@
                 <div class="d-flex" role="search">
                     <ul class="header-social-list" style="text-align: center">
                         <li>
-                            <a href="javascript:void(0);" class="social-icon">
+                            <a href="https://www.facebook.com/corelink.mkt/" target="_blank" class="social-icon">
                                 <img src="assets/images/icons/icons8-facebook-32.png" alt="">
                             </a>
                         </li>
@@ -112,45 +119,74 @@
         </div>
     </section>
 
-    <main class="container">
-        <section id="about-us" class="mb-5">
-            <div class="section_title text-center" data-wow-delay="0.2s">
-                <br><br>
-                <h2 class="con_title">About Us</h2>
-                <div class="line_bottom"></div>
-            </div>
-            <p class="fw-bold text-center">
-                Welcome to CoreLink: Your Gateway to Seamless Connectivity
-            </p>
-            <div style="text-align: justify;">
-                <p>
-                    Founded in 2016, CoreLink has swiftly emerged as a reputable leader in the networking industry. With
-                    a
-                    passion for technological innovation and a commitment to customer satisfaction, we specialize in
-                    providing cutting-edge networking products and solutions tailored to meet the diverse needs of
-                    businesses worldwide
-                </p>
-                <p>Corelink is a manufacturing company focusing on
-                    communication services. Based on the connection of
-                    signal receiving terminals and information data through
-                    GPON or EPON access network technology, Bonelinks
-                    provides turnkey solutions including optical cable
-                    structure design and development, application deployment
-                    and system integration. Our business covers a wide range
-                    of areas, including data centers, FTTR, FTTH, FTTB, OPS,
-                    ISP, power transmission, submarine transmission, and
-                    duct transmission.</p>
-                <p>
-                    At CoreLink, we are dedicated to forging strong connections that drive innovation and propel
-                    businesses
-                    forward. As a premier provider of networking products, we are committed to delivering cutting-edge
-                    solutions that empower organizations to thrive in today's digital landscape.
-                </p>
+    <section id="about-us" class="mb-5 bg-grey" >
+        <div class="container pb-5">
+            <div class="row">
+                <div class="section_title text-center" data-wow-delay="0.2s">
+                    <br><br>
+                    <h2 class="con_title">About Us</h2>
+                    <div class="line_bottom"></div>
+                </div>
 
-            </div>
+                <div class="col-md-6">
+                    <br>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://www.bonelinks.com/wp-content/uploads/2023/08/bonelinks-fiber-supplier3-scaled.webp"  alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.bonelinks.com/wp-content/uploads/2023/08/bonelinks-fiber-supplier1.webp"  alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.bonelinks.com/wp-content/uploads/2023/08/bonelinks-fiber-supplier2.webp"  alt="...">
+                            </div>
+                        </div>
+                        <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">-->
+                            <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                            <!--<span class="visually-hidden">Previous</span>-->
+                        <!--</button>-->
+                        <!--<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">-->
+                            <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                            <!--<span class="visually-hidden">Next</span>-->
+                        <!--</button>-->
+                    </div>
+                </div>
 
-        </section>
-    </main>
+                <div class="col-md-6">
+                    <br>
+                    <p class="fw-bold text-center">
+                        Welcome to CoreLink: Your Gateway to Seamless Connectivity
+                    </p>
+                    <div style="text-align: justify;">
+                        <p>
+                            Founded in 2016, CoreLink has swiftly emerged as a reputable leader in the networking industry. With
+                            a
+                            passion for technological innovation and a commitment to customer satisfaction, we specialize in
+                            providing cutting-edge networking products and solutions tailored to meet the diverse needs of
+                            businesses worldwide
+                        </p>
+                        <p>Corelink is a manufacturing company focusing on
+                            communication services. Based on the connection of
+                            signal receiving terminals and information data through
+                            GPON or EPON access network technology, Bonelinks
+                            provides turnkey solutions including optical cable
+                            structure design and development, application deployment
+                            and system integration. Our business covers a wide range
+                            of areas, including data centers, FTTR, FTTH, FTTB, OPS,
+                            ISP, power transmission, submarine transmission, and
+                            duct transmission.</p>
+                        <p>
+                            At CoreLink, we are dedicated to forging strong connections that drive innovation and propel
+                            businesses
+                            forward. As a premier provider of networking products, we are committed to delivering cutting-edge
+                            solutions that empower organizations to thrive in today's digital landscape.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="products">
         <div class="container">
@@ -170,7 +206,7 @@
                 companies for all your needs.
             </p>
             <div class="row my-5">
-                <div class="col-md-6">
+                <div class="col-md-6 align-content-center">
                     <div class="section_title" data-wow-delay="0.2s">
                         <h4 class="text-center con_title ">Optical Line Terminal (OLT)</h4>
                         <div class="ps-3" style="text-align: justify;">
@@ -186,7 +222,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 align-content-center">
                     <div class="card rounded-3 shadow">
                         <div class="text-center image-container py-2">
                             <img src="assets/images/products/olt (2).png" class="img-fluid card-img-top" alt="...">
@@ -203,9 +239,9 @@
                     </div>
                 </div>
             </div>
-            <hr>
+
             <div class="row my-5">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 align-content-center">
                     <div class="card rounded-3 shadow">
                         <div class="text-center image-container py-2">
                             <img src="assets/images/products/2_8004adf7-344d-4294-aa57-7b6e2b796d76.png"
@@ -221,7 +257,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 align-content-center">
                     <div class="section_title" data-wow-delay="0.2s">
                         <h4 class="con_title text-center">HDMI Live Tv Encoder</h4>
                         <div class="ps-3" style="text-align: justify;">
@@ -238,10 +274,9 @@
                     </div>
                 </div>
             </div>
-            <hr>
 
             <div class="row my-5">
-                <div class="col-md-6">
+                <div class="col-md-6 align-content-center">
                     <div class="section_title" data-wow-delay="0.2s">
                         <h4 class="text-center con_title ">Optical Power Meter</h4>
                         <div class="ps-3" style="text-align: justify;">
@@ -257,7 +292,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 align-content-center">
                     <div class="card rounded-3 shadow">
                         <div class="text-center image-container py-2">
                             <img src="assets/images/products/power.png" class="img-fluid card-img-top" alt="...">
@@ -274,11 +309,9 @@
                     </div>
                 </div>
             </div>
-            <hr>
 
-            <!-- Fiber Optic Splitter -->
             <div class="row my-5">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 align-content-center">
                     <div class="card rounded-3 shadow">
                         <div class="text-center image-container py-2">
                             <img src="assets/images/products/1x4-apc-1x4-Mini-blockless-PLC-Splitter-4-500x500.jpeg"
@@ -294,7 +327,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 align-content-center">
                     <div class="section_title" data-wow-delay="0.2s">
                         <h4 class="con_title text-center">Optical Cable Splitter</h4>
                         <div class="ps-3" style="text-align: justify;">
@@ -321,10 +354,9 @@
                     </div>
                 </div>
             </div>
-            <hr>
-            <!-- Fiber Optic Patchcord -->
+
             <div class="row my-5">
-                <div class="col-md-6">
+                <div class="col-md-6 align-content-center">
                     <div class="section_title" data-wow-delay="0.2s">
                         <h4 class="text-center con_title ">Optical Cable Patchcord</h4>
                         <div class="ps-3" style="text-align: justify;">
@@ -350,7 +382,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 align-content-center">
                     <div class="card rounded-3 shadow h-100">
                         <div class="text-center image-container py-2">
                             <img src="assets/images/products/patchcord.jpg" class="img-fluid card-img-top" alt="...">
@@ -369,9 +401,9 @@
                     </div>
                 </div>
             </div>
-            <hr>
+
             <div class="row my-5">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 align-content-center">
                     <div class="card rounded-3 shadow">
                         <div class="text-center image-container py-2">
                             <img src="assets/images/products/SFP-10G-SR-500x500.jpg" class="card-img-top" alt="...">
@@ -388,7 +420,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 align-content-center">
                     <div class="section_title" data-wow-delay="0.2s">
                         <h4 class="con_title text-center">Optical Transceivers</h4>
                         <div class="ps-3" style="text-align: justify;">
@@ -420,7 +452,7 @@
         </div>
     </section>
 
-    <section id="featured-products" class="mt-5">
+    <section id="featured-products" class="mt-5 bg-grey">
         <div class="container">
             <div class="section_title text-center" data-wow-delay="0.2s">
                 <br>
@@ -433,7 +465,7 @@
             </p>
             <div class="row pb-5 my-slider">
                 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class="card h-100">
+                    <div class="card h-100 bg-grey">
                         <div class="text-center p-3">
                             <img src="assets/images/products/w80.png" class="card-img-top w-100" alt="...">
                         </div>
@@ -446,7 +478,7 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class="card h-100">
+                    <div class="card h-100 bg-grey">
                         <div class="text-center p-3">
                             <img src="assets/images/products/w70.png" class="w-70 card-img-top w-100" alt="...">
                         </div>
@@ -459,7 +491,7 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class="card h-100">
+                    <div class="card h-100 bg-grey">
                         <div class="text-center p-3">
                             <img src="assets/images/products/olt (2).png" class="card-img-top w-100 pt-2" alt="...">
                         </div>
@@ -472,7 +504,7 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class="card h-100">
+                    <div class="card h-100 bg-grey">
                         <div class="text-center p-3">
                             <img src="assets/images/products/power.png" class="card-img-top w-100 pt-2" alt="...">
                         </div>
@@ -485,7 +517,7 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class="card h-100">
+                    <div class="card h-100 bg-grey">
                         <div class="text-center p-3">
                             <img src="assets/images/products/otdr.png" class="card-img-top w-100 pt-2" alt="...">
                         </div>
@@ -498,7 +530,7 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class="card h-100">
+                    <div class="card h-100 bg-grey">
                         <div class="text-center p-3">
                             <img src="assets/images/products/sfp.png" class="w-70 card-img-top w-100 pt-2" alt="...">
                         </div>
@@ -511,7 +543,7 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class="card h-100">
+                    <div class="card h-100 bg-grey">
                         <div class="text-center p-3">
                             <img src="assets/images/products/patch.png" class="card-img-top w-100 pt-2" alt="...">
                         </div>
@@ -524,7 +556,7 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class="card h-100">
+                    <div class="card h-100 bg-grey">
                         <div class="text-center p-3">
                             <img src="assets/images/products/router.png" class="card-img-top w-100 pt-2" alt="...">
                         </div>
@@ -800,7 +832,78 @@
         </div>
     </section>
 
-    <section id="contact-us" class="bg-grey">
+    <section id="contact-us" class="my-3 bg-grey">
+        <div class="section_title text-center" data-wow-delay="0.2s">
+            <br>
+            <h2 class="con_title">
+                Customized Networking Products & Accessories
+            </h2>
+            <div class="line_bottom"></div>
+        </div>
+        <div class="container py-3">
+            <p style="text-align: justify">Want to
+                make your personalized fiber optical products?
+                With flexibility and expertise being at the core
+                of our comprehensive product customization
+                service, we have a set of processes and services
+                to meet your special requirements. Our extensive
+                range of customization options including
+                everything from compatibility to packaging
+                solutions, allows us perfectly serve your
+                business.</p>
+            <div class="row pb-5">
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card rounded-3 shadow h-100 bg-grey">
+                        <div class="text-center py-2">
+                            <img src="assets/images/products/compatible.png" alt="...">
+                            <h5 class="card-title">Competitive Price</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card rounded-3 shadow h-100 bg-grey">
+                        <div class="text-center py-2">
+                            <img src="assets/images/products/material.png" alt="...">
+                            <h5 class="card-title">Materials</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card rounded-3 shadow h-100 bg-grey">
+                        <div class="text-center py-2">
+                            <img src="assets/images/products/function.png" alt="...">
+                            <h5 class="card-title">Function</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card rounded-3 shadow h-100 bg-grey">
+                        <div class="text-center py-2">
+                            <img src="assets/images/products/dimensions.png" alt="...">
+                            <h5 class="card-title">Dimensions</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card rounded-3 shadow h-100 bg-grey">
+                        <div class="text-center py-2">
+                            <img src="assets/images/products/appearance.png" alt="...">
+                            <h5 class="card-title">Appearance</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card rounded-3 shadow h-100 bg-grey">
+                        <div class="text-center py-2">
+                            <img src="assets/images/products/packing.png" alt="...">
+                            <h5 class="card-title">Packaging</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-us">
         <div class="section_title text-center" data-wow-delay="0.2s">
             <br>
             <h2 class="con_title"> A
@@ -835,7 +938,7 @@
             nav: false,
             controls: false,
             speed: 300,
-            autoplayTimeout: 1000,
+            autoplayTimeout: 2000,
             autoplayHoverPause: 1,
 
             responsive: {
@@ -851,6 +954,25 @@
                     items: 4
                 }
             }
+        });
+    </script>
+
+    <script type="text/javascript">
+        $( document ).ready(function( $ ) {
+            $( '#example3' ).sliderPro({
+                width: 960,
+                height: 500,
+                fade: true,
+                arrows: true,
+                buttons: false,
+                fullScreen: true,
+                shuffle: true,
+                smallSize: 500,
+                mediumSize: 1000,
+                largeSize: 3000,
+                thumbnailArrows: true,
+                autoplay: false
+            });
         });
     </script>
 </body>

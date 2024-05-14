@@ -10,119 +10,346 @@
 </head>
 <body>
 
-    <nav class="navbar sticky-top navbar-expand-lg shadow">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo/logo.png" alt="Logo"
-                    class="header-brand-img d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+<nav class="navbar sticky-top navbar-expand-lg shadow">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo/logo.png" alt="Logo"
+                 class="header-brand-img d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link btn rounded-3 shadow" href="index.html">Home</a>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link btn rounded-3 shadow" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle btn rounded-3 shadow" data-bs-toggle="dropdown"
+                       href="index.html" aria-expanded="true">Products</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="splicer.html">Fushion Splicer</a></li>
+                        <li><a class="dropdown-item" href="olts.html">Optical Line Terminal</a></li>
+                        <li><a class="dropdown-item" href="otdr.html">OTDR</a></li>
+                        <li><a class="dropdown-item" href="meter.html">Power Meter</a></li>
+                        <li><a class="dropdown-item" href="sfp.html">Pon Module</a></li>
+                        <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+                    </ul>
+                </li>
+                <!--<li class="nav-item dropdown">-->
+                <!--<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"-->
+                <!--aria-expanded="false">Support</a>-->
+                <!--<ul class="dropdown-menu">-->
+                <!--<li><a class="dropdown-item" href="#">Download</a></li>-->
+                <!--<li><a class="dropdown-item" href="#">Verify Product</a></li>-->
+                <!--</ul>-->
+                <!--</li>-->
+                <li class="nav-item">
+                    <a class="nav-link btn rounded-3 shadow" href="blogs.html">Download</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn rounded-3 shadow" href="service.html">Support & Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn rounded-3 shadow" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn rounded-3 shadow" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="d-flex" role="search">
+                <ul class="header-social-list" style="text-align: center">
+                    <li>
+                        <a href="https://www.facebook.com/corelink.mkt/" target="_blank" class="social-icon">
+                            <img src="assets/images/icons/icons8-facebook-32.png" alt="">
+                        </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn rounded-3 shadow" data-bs-toggle="dropdown"
-                            href="index.html" aria-expanded="true">Products</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="splicer.html">Fushion Splicer</a></li>
-                            <li><a class="dropdown-item" href="olts.html">Optical Line Terminal</a></li>
-                            <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
-                        </ul>
+                    <li>
+                        <a href="javascript:void(0);" class="social-icon">
+                            <img src="assets/images/icons/icons8-youtube-32.png" alt="">
+                        </a>
                     </li>
-                    <!--<li class="nav-item dropdown">-->
-                    <!--<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"-->
-                    <!--aria-expanded="false">Support</a>-->
-                    <!--<ul class="dropdown-menu">-->
-                    <!--<li><a class="dropdown-item" href="#">Download</a></li>-->
-                    <!--<li><a class="dropdown-item" href="#">Verify Product</a></li>-->
-                    <!--</ul>-->
-                    <!--</li>-->
-                    <li class="nav-item">
-                        <a class="nav-link btn rounded-3 shadow" href="blogs.html">Blogs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn rounded-3 shadow" href="service.html">Support & Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn rounded-3 shadow" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn rounded-3 shadow" href="contact.html">Contact</a>
+                    <li>
+                        <a href="javascript:void(0);" class="social-icon">
+                            <img src="assets/images/icons/icons8-linkedin-32.png" alt="">
+                        </a>
                     </li>
                 </ul>
-                <div class="d-flex" role="search">
-                    <ul class="header-social-list" style="text-align: center">
-                        <li>
-                            <a href="javascript:void(0);" class="social-icon">
-                                <img src="assets/images/icons/icons8-facebook-32.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="social-icon">
-                                <img src="assets/images/icons/icons8-youtube-32.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="social-icon">
-                                <img src="assets/images/icons/icons8-linkedin-32.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
 
 <main class="container" style="padding-top: 20px">
     <section id="about-section">
         <div class="row">
             <div class="col-12 p-2">
-                <h2 class="about-heading text-center">About CoreLink</h2>
-                <p class="about-content">CoreLink is a leading provider of networking solutions, dedicated to empowering businesses with seamless connectivity. Our mission is to redefine networking by offering scalable, reliable, and secure products tailored to meet the evolving needs of modern enterprises. With CoreLink, you can trust that your network infrastructure is in good hands, enabling you to focus on what matters most: driving innovation, fostering collaboration, and achieving your business goals.</p>
+                <div class="section_title text-center" data-wow-delay="0.2s">
+                    <br>
+                    <h2 class="con_title">About Corelink</h2>
+                    <div class="line_bottom"></div>
+                </div>
+                <p class="about-content text-center">
+                    Bonelinks is a manufacturing company focusing on fiber optic communication services. We provide
+                    turnkey solutions including optical cable structure design and development, application deployment
+                    and system integration. Our business covers a wide range of areas, including data centers, FTTR,
+                    FTTH, FTTB, OPS, ISP, power transmission, submarine transmission, and duct transmission.
+                </p>
+                <!--<p class="about-content text-center">CoreLink is a leading provider of networking solutions, dedicated to empowering-->
+                    <!--businesses with seamless connectivity. Our mission is to redefine networking by offering scalable,-->
+                    <!--reliable, and secure products tailored to meet the evolving needs of modern enterprises. With-->
+                    <!--CoreLink, you can trust that your network infrastructure is in good hands, enabling you to focus on-->
+                    <!--what matters most: driving innovation, fostering collaboration, and achieving your business-->
+                    <!--goals.</p>-->
+            </div>
+            <div class="col-12">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://omo-oss-image.thefastimg.com/portal-saas/new2023053118022456407/cms/image/4271de55-843f-40e0-b831-584a2b9e96d4.jpg" width="100%"  alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.bonelinks.com/wp-content/uploads/2023/08/bonelinks-fiber-supplier3-scaled.webp" width="100%"  alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.bonelinks.com/wp-content/uploads/2023/08/bonelinks-fiber-supplier1.webp" width="100%"  alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.bonelinks.com/wp-content/uploads/2023/08/bonelinks-fiber-supplier2.webp" width="100%"  alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.bonelinks.com/wp-content/uploads/2023/08/bonelinks-fiber-supplier4.webp" width="100%"  alt="...">
+                        </div>
+                    </div>
+                    <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">-->
+                    <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                    <!--<span class="visually-hidden">Previous</span>-->
+                    <!--</button>-->
+                    <!--<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">-->
+                    <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                    <!--<span class="visually-hidden">Next</span>-->
+                    <!--</button>-->
+                </div>
+            </div>
+            <div class="col-12 p-2">
+                <div class="section_title text-center" data-wow-delay="0.2s">
+                    <br>
+                    <h2 class="con_title">Core Business</h2>
+                    <div class="line_bottom"></div>
+                </div>
+
+                <p class="about-content text-center">
+                    We’ve been iterating and
+                    innovating for more than 8 years – now we’re creating the next
+                    one.<br/>We help you increase efficiency, reduce cabling labor
+                    costs, and adopt easier innovations in a world of connected
+                    data.<br/>We enjoy what we do, and we’re good at it.
+                </p>
+            </div>
+            <div class="col-12">
+                <div class="row pb-5 my-slider">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="card h-100  ">
+                            <div class="text-center p-3">
+                                <img src="assets/images/products/w80.png" class="card-img-top w-100" alt="...">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Corelink W-80 Splicer</h5>
+                                <!--<p class="card-text">Endface melter Fusion Splicer</p>-->
+                                <a href="w80.html" class="btn btn-primary w-100">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="card h-100  ">
+                            <div class="text-center p-3">
+                                <img src="assets/images/products/w70.png" class="w-70 card-img-top w-100" alt="...">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Corelink W-70 Splicer</h5>
+                                <!--<p class="card-text">Strong Performance Mini splicer</p>-->
+                                <a href="w70.html" class="btn btn-primary w-100">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="card h-100  ">
+                            <div class="text-center p-3">
+                                <img src="assets/images/products/olt (2).png" class="card-img-top w-100 pt-2" alt="...">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Optical Line Terminal</h5>
+                                <!--<p class="card-text">Dual Power Optical Line Terminal</p>-->
+                                <a href="olts.html" class="btn btn-primary w-100">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="card h-100  ">
+                            <div class="text-center p-3">
+                                <img src="assets/images/products/power.png" class="card-img-top w-100 pt-2" alt="...">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">CoreLink Power Meter</h5>
+                                <!--<p class="card-text">Dual Power Optical Line Terminal</p>-->
+                                <a href="meter.html" class="btn btn-primary w-100">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="card h-100  ">
+                            <div class="text-center p-3">
+                                <img src="assets/images/products/otdr.png" class="card-img-top w-100 pt-2" alt="...">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">CoreLink OTDR</h5>
+                                <!--<p class="card-text">Endface melter Fusion Splicer</p>-->
+                                <a href="otdr.html" class="btn btn-primary w-100">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="card h-100  ">
+                            <div class="text-center p-3">
+                                <img src="assets/images/products/sfp.png" class="w-70 card-img-top w-100 pt-2" alt="...">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">SFP Pon Module</h5>
+                                <!--<p class="card-text">Strong Performance Mini splicer</p>-->
+                                <a href="sfp.html" class="btn btn-primary w-100">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="card h-100  ">
+                            <div class="text-center p-3">
+                                <img src="assets/images/products/patch.png" class="card-img-top w-100 pt-2" alt="...">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">CoreLink Patchcord</h5>
+                                <!--<p class="card-text">Dual Power Optical Line Terminal</p>-->
+                                <a href="patchcord.html" class="btn btn-primary w-100">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="card h-100  ">
+                            <div class="text-center p-3">
+                                <img src="assets/images/products/router.png" class="card-img-top w-100 pt-2" alt="...">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">CoreLink ONU Router</h5>
+                                <!--<p class="card-text">Dual Power Optical Line Terminal</p>-->
+                                <a href="router.html" class="btn btn-primary w-100">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="col-12 p-2">
                 <h2 class="about-heading">Our Mission:</h2>
                 <p class="about-content">
-                    At CoreLink, our mission is to redefine connectivity by providing scalable, reliable, and secure networking products that enable our customers to unleash their full potential. We believe that a robust network infrastructure is the foundation of success in the digital age, and we are here to help businesses build and maintain networks that support their growth and evolution.
+                    At CoreLink, our mission is to redefine connectivity by providing scalable, reliable, and secure
+                    networking products that enable our customers to unleash their full potential. We believe that a
+                    robust network infrastructure is the foundation of success in the digital age, and we are here to
+                    help businesses build and maintain networks that support their growth and evolution.
                 </p>
             </div>
 
-            <div class="col-12 p-2">
-                <h2 class="about-heading">Our Products:</h2>
-                <p class="about-content">
-                    From powerful routers and switches to intelligent wireless solutions and advanced security appliances, CoreLink offers a comprehensive suite of networking products designed to meet the diverse needs of modern enterprises. Our products are engineered with performance, scalability, and security in mind, ensuring that your network infrastructure can handle the demands of today's dynamic business environment.
+            <div class="col-12">
+                <h2 class="about-heading">Plants & Facilities:</h2>
+                <p>Welcome to Bonelinks, the
+                    leading fiber Optic Products manufacturer in China. We invite
+                    you to visit our state-of-the-art factory and witness our
+                    exceptional production capabilities firsthand.
                 </p>
+
+                <div class="row text-center text-lg-start">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="text-center">
+                            <img src="https://www.bonelinks.com/wp-content/uploads/2023/05/fiber-patch-cord-factory1-201x300.jpg" class="card-img-top w-100 pt-2" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="text-center">
+                            <img src="https://www.bonelinks.com/wp-content/uploads/2023/05/fiber-patch-cord-factory-3-1-1-300x156.jpg" class="card-img-top w-100 pt-2" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="text-center">
+                            <img src="https://www.bonelinks.com/wp-content/uploads/2023/05/fiber-patch-cord-factory-4-300x162.jpg" class="card-img-top w-100 pt-2" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="text-center">
+                            <img src="https://www.bonelinks.com/wp-content/uploads/2023/05/fiber-patch-cord-factory-2.jpg" class="card-img-top w-100 pt-2" alt="...">
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-12 p-2">
+
+            <!--<div class="col-12 p-2">-->
+                <!--<h2 class="about-heading">Our Products:</h2>-->
+                <!--<p class="about-content">-->
+                    <!--From powerful routers and switches to intelligent wireless solutions and advanced security-->
+                    <!--appliances, CoreLink offers a comprehensive suite of networking products designed to meet the-->
+                    <!--diverse needs of modern enterprises. Our products are engineered with performance, scalability, and-->
+                    <!--security in mind, ensuring that your network infrastructure can handle the demands of today's-->
+                    <!--dynamic business environment.-->
+                <!--</p>-->
+            <!--</div>-->
+
+            <div class="col-12 p-2 mt-5">
                 <h2 class="about-heading">Key Features:</h2>
                 <ul class="about-content">
-                    <li>High-performance connectivity: CoreLink products leverage state-of-the-art technologies to deliver lightning-fast speeds and low latency, enabling seamless communication and collaboration across your organization.</li>
-                    <li>Scalability: Whether you're a small startup or a large corporation, our scalable solutions can grow with your business, providing the flexibility you need to adapt to changing requirements and scale your network infrastructure as your organization expands.</li>
-                    <li>Security: Protecting your data and network assets is our top priority. CoreLink products come equipped with robust security features to defend against cyber threats and unauthorized access, keeping your network safe and secure.</li>
-                    <li>Seamless integration: With support for industry-standard protocols and seamless interoperability with third-party systems, CoreLink products integrate effortlessly into your existing network environment, minimizing disruption and complexity.</li>
+                    <li>High-performance connectivity: CoreLink products leverage state-of-the-art technologies to
+                        deliver lightning-fast speeds and low latency, enabling seamless communication and collaboration
+                        across your organization.
+                    </li>
+                    <li>Scalability: Whether you're a small startup or a large corporation, our scalable solutions can
+                        grow with your business, providing the flexibility you need to adapt to changing requirements
+                        and scale your network infrastructure as your organization expands.
+                    </li>
+                    <li>Security: Protecting your data and network assets is our top priority. CoreLink products come
+                        equipped with robust security features to defend against cyber threats and unauthorized access,
+                        keeping your network safe and secure.
+                    </li>
+                    <li>Seamless integration: With support for industry-standard protocols and seamless interoperability
+                        with third-party systems, CoreLink products integrate effortlessly into your existing network
+                        environment, minimizing disruption and complexity.
+                    </li>
                 </ul>
             </div>
 
             <div class="col-12 p-2">
                 <h2 class="about-heading">Customer-Centric Approach:</h2>
                 <p class="about-content">
-                    At CoreLink, we are committed to delivering an unparalleled customer experience. Our dedicated team of networking experts is here to provide personalized support and guidance at every stage of your journey, from product selection and deployment to ongoing maintenance and optimization. We understand that every business is unique, and we'll work closely with you to tailor our solutions to meet your specific needs and objectives.
+                    At CoreLink, we are committed to delivering an unparalleled customer experience. Our dedicated team
+                    of networking experts is here to provide personalized support and guidance at every stage of your
+                    journey, from product selection and deployment to ongoing maintenance and optimization. We
+                    understand that every business is unique, and we'll work closely with you to tailor our solutions to
+                    meet your specific needs and objectives.
                 </p>
             </div>
 
             <div class="col-12 p-2">
                 <h2 class="about-heading">Join the CoreLink Community:</h2>
                 <p class="about-content">
-                    Experience the power of seamless connectivity with CoreLink. Whether you're looking to enhance collaboration, boost productivity, or improve network performance, CoreLink has the solutions you need to succeed. Join the CoreLink community today and unlock a world of possibilities.
+                    Experience the power of seamless connectivity with CoreLink. Whether you're looking to enhance
+                    collaboration, boost productivity, or improve network performance, CoreLink has the solutions you
+                    need to succeed. Join the CoreLink community today and unlock a world of possibilities.
                 </p>
             </div>
 
